@@ -84,6 +84,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
+              viewport={{ amount: 1 }}
               className="p-6 border rounded-xl shadow-sm hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
@@ -97,6 +98,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
+              viewport={{ amount: 1 }}
               className="p-6 border rounded-xl shadow-sm hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
@@ -111,6 +113,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
+              viewport={{ amount: 1 }}
               className="p-6 border rounded-xl shadow-sm hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">SMM</h3>
@@ -122,6 +125,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 }}
+              viewport={{ amount: 1 }}
               className="p-6 border rounded-xl shadow-sm hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
