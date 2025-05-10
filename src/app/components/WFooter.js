@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 
 export default function WFooter() {
   return (
@@ -40,20 +42,20 @@ export default function WFooter() {
         </div>
         <div>
           <h3 className="font-semibold mb-2">Contact</h3>
-          <p className="text-sm">📧 contact@sahayta.ai</p>
-          <p className="text-sm">📞 +91-XXXXXXXXXX</p>
+          <p className="text-sm">📧 info@sahayta.co.in</p>
+          <p className="text-sm">📞 +91-7479769111</p>
         </div>
         <div>
           <h3 className="font-semibold mb-2">Follow Us</h3>
           <div className="flex space-x-4 mt-1 text-xl">
             <a href="#">
-              <i className="ri-instagram-line"></i>
+              <FaInstagram />
             </a>
             <a href="#">
-              <i className="ri-linkedin-box-line"></i>
+              <FaLinkedin />
             </a>
             <a href="#">
-              <i className="ri-whatsapp-line"></i>
+              <FaWhatsapp />
             </a>
           </div>
         </div>

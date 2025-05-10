@@ -26,8 +26,9 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4"
           >
-            AI-Powered Marketing <br />
-            for the Digital Future
+            Where small businesses meet
+            <br />
+            big marketing through AI
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -62,20 +63,42 @@ export default function Home() {
 
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-800">Our Services</h2>
-          <p className="mt-2 text-gray-500">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-3xl font-bold text-gray-800"
+          >
+            Our Services
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="mt-2 text-gray-500"
+          >
             Smart digital marketing solutions powered by AI
-          </p>
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md">
+          </motion.p>
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="p-6 border rounded-xl shadow-sm hover:shadow-md"
+            >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
                 Website Development
               </h3>
               <p className="text-gray-600 text-sm">
                 Beautiful, fast, SEO-ready websites tailored for your business.
               </p>
-            </div>
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+              className="p-6 border rounded-xl shadow-sm hover:shadow-md"
+            >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
                 Call Automation
               </h3>
@@ -83,32 +106,53 @@ export default function Home() {
                 AI voice agents for outbound/inbound calls, lead follow-up &
                 more.
               </p>
-            </div>
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1 }}
+              className="p-6 border rounded-xl shadow-sm hover:shadow-md"
+            >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">SMM</h3>
               <p className="text-gray-600 text-sm">
                 Targeted content, engagement tracking, and campaign automation.
               </p>
-            </div>
-            <div className="p-6 border rounded-xl shadow-sm hover:shadow-md">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2 }}
+              className="p-6 border rounded-xl shadow-sm hover:shadow-md"
+            >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
                 AI Automation
               </h3>
               <p className="text-gray-600 text-sm">
                 Custom AI workflows for leads, sales, support & marketing tasks.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-800 text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-3xl font-bold text-gray-800 text-center mb-16 "
+          >
             Our Work
-          </h2>
+          </motion.h2>
           <div className="mt-10 grid md:grid-cols-2 gap-8">
-            <div className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ amount: 0.5 }}
+              className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md"
+            >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
                 Beyond Renewables
               </h3>
@@ -123,7 +167,7 @@ export default function Home() {
               >
                 Visit Site →
               </a>
-            </div>
+            </motion.div>
             {/* Add more projects here as you complete them */}
           </div>
         </div>
