@@ -2,6 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import CanvasBackgroundMouse from "./components/CanvasBackgroundMouse";
+import FeaturesSection2 from "./components/home/FeaturesSection2";
+import WorkSection from "./components/home/WorkSection";
 
 export default function Home() {
   return (
@@ -17,8 +20,12 @@ export default function Home() {
           src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="section1-bg"
           fill
+          priority
           className=" -z-10 object-cover "
         />
+
+        <CanvasBackgroundMouse />
+
         <div className="max-w-4xl mx-auto px-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +45,7 @@ export default function Home() {
           >
             Websites, Calls, and Social Media—Automated and Optimized.
           </motion.p>
-          <div className="mt-7 flex justify-center space-x-4">
+          <div className="mt-11 flex justify-center space-x-4">
             <motion.a
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -61,7 +68,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -137,45 +144,11 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-3xl font-bold text-gray-800 text-center mb-16 "
-          >
-            Our Work
-          </motion.h2>
-          <div className="mt-10 grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ amount: 0.5 }}
-              className="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md"
-            >
-              <h3 className="text-xl font-semibold text-blue-600 mb-2">
-                Beyond Renewables
-              </h3>
-              <p className="text-sm text-gray-600">
-                We designed and developed the website for this solar waste
-                management startup with clean visuals and SEO-focused content.
-              </p>
-              <a
-                href="https://beyondrenewables.in"
-                target="_blank"
-                className="text-blue-500 text-sm mt-3 inline-block hover:underline"
-              >
-                Visit Site →
-              </a>
-            </motion.div>
-            {/* Add more projects here as you complete them */}
-          </div>
-        </div>
-      </section>
+      <FeaturesSection2 />
+
+      <WorkSection />
 
       <motion.section
         initial={{ opacity: 0, y: 30 }}
