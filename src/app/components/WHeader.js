@@ -42,6 +42,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import "../styles/header.css";
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -68,7 +69,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="hover:text-blue-600 transition"
+                className="hover:text-blue-600 transition font-comic-n text-lg font-extrabold hover:scale-110 h-desktop-link "
               >
                 {item.name}
               </Link>
@@ -77,9 +78,9 @@ export default function Header() {
 
           <Link
             href="/contact"
-            className=" hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 text-sm"
+            className=" hidden md:inline-block px-4 py-2 rounded-lg text-sm relative z-0 get-quote-link"
           >
-            Get a Quote
+            <span className=" relative z-0 get-quote-text ">Get a Quote</span>
           </Link>
 
           {/* Mobile Menu Toggle */}

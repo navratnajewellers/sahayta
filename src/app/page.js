@@ -5,6 +5,7 @@ import Image from "next/image";
 import CanvasBackgroundMouse from "./components/CanvasBackgroundMouse";
 import FeaturesSection2 from "./components/home/FeaturesSection2";
 import WorkSection from "./components/home/WorkSection";
+import AboutSection from "./components/home/AboutSection";
 
 export default function Home() {
   return (
@@ -31,11 +32,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4"
+            className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4 "
           >
-            Where small businesses meet
+            Supercharge Your Business with
             <br />
-            big marketing through AI
+            AI-Powered Marketing
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -67,6 +68,8 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+
+      <AboutSection />
 
       {/* <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 text-center">

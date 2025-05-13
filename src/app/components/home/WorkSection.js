@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const WorkSection = () => {
   const workPartners = [
@@ -26,7 +25,7 @@ const WorkSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 ">
+    <section className="py-20 bg-linear-120 from-gray-50 to-blue-100 ">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +33,7 @@ const WorkSection = () => {
           transition={{ delay: 0.2 }}
           className="text-4xl font-bold text-gray-800 text-center mb-4 "
         >
-          Our Work
+          Trusted by business
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -52,7 +51,7 @@ const WorkSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ amount: 0.5 }}
-              className="bg-white border rounded-lg p-11 shadow-sm hover:shadow-md"
+              className="bg-white border border-gray-100 rounded-lg p-11 shadow-sm hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-blue-600 mb-2">
                 {data.title}

@@ -1,20 +1,41 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function ContactPage() {
   return (
     <>
       <section className="bg-blue-50 py-16 text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl font-bold text-blue-700 mb-4">Contact Us</h1>
-          <p className="text-gray-600 text-lg">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-4xl font-bold text-blue-700 mb-4"
+          >
+            Contact Us
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-gray-600 text-lg"
+          >
             We&apos;d love to hear from you. Whether you have a question or want
             to start a project, just drop us a message.
-          </p>
+          </motion.p>
         </div>
       </section>
 
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            viewport={{ amount: 0.5 }}
+          >
             <form className="space-y-6">
               <div>
                 <label className="block mb-1 text-sm font-medium text-gray-700">
@@ -59,10 +80,16 @@ export default function ContactPage() {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
 
           {/* Contact Details */}
-          <div className="flex flex-col justify-center">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6 }}
+            viewport={{ amount: 0.5 }}
+            className="flex flex-col justify-center"
+          >
             <div className="space-y-4 text-gray-700 text-sm">
               <p>
                 <strong>Email:</strong> info@sahayta.co.in
@@ -80,7 +107,7 @@ export default function ContactPage() {
                 Let’s build something remarkable together.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
